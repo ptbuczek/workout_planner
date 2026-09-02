@@ -1,0 +1,23 @@
+[project]
+name = "workout-planner"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Piotr Buczek", email = "pioterk@icloud.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "polars>=1.44.1",
+    "ruff>=0.16.5",
+    "streamlit>=1.63.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.3,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.5",
+]
